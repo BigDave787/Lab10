@@ -33,14 +33,14 @@ export class TodoAppComponent implements OnInit {
     this.todoService.toggleTodoComplete(todo);
   }
 
-  removeTodo(todo) {
-    this.todoService.remove(todo.id);
+  deleteTodo(todoId: number) {
+    this.todoService.remove(todoId);
   }
 
   ngOnInit() {
 this.todos = this.todoService.todos;
-this.singleTodo$ = this.todoService.todos;
-      .map(todos => todos.find(item => item.id == '1'));
+this.singleTodo$ = this.todoService.todos
+      .map(todos => todos.find(item => item.id === '1'));
 this.todoService.loadAll();
 this.todoService.load('1');
   }

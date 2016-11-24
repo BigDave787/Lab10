@@ -26,7 +26,7 @@ private _todos: BehaviorSubject<Todo[]>;
 
 // Base URL of RESTful service - replace with your own
 
-private baseUrl = 'http://5835a88485c70c1200ed69b4.mockapi.io/todos';
+private baseUrl = 'http://5835a88485c70c1200ed69b4.mockapi.io';
 
 // Define header content type - very important!
 
